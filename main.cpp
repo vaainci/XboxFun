@@ -16,7 +16,7 @@
 #define GREEN       "\033[32m"
 #define YELLOW      "\033[33m"
 #define CYAN        "\033[36m"
-#define CLEAR_ALL   "\033[2J\033[H" // Efface TOUT et remet en haut
+#define CLEAR_ALL   "\033[2J\033[H"
 #define HIDE_CURSOR "\033[?25l"
 
 enum ModeVibration { TRIGGER, PULSE, WAVE, HEARTBEAT, ABS, STROBO, GEIGER };
@@ -198,7 +198,7 @@ int main() {
 
         // AFFICHAGE FINAL
         afficherInterface(intensite * forceGlobale, vEff);
-        SDL_Delay(20); // Un peu plus de délai pour stabiliser l'affichage
+        SDL_Delay(20); // délai pour stabiliser l'affichage
     }
     return 0;
 }
